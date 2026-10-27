@@ -1,0 +1,13 @@
+pandas
+numpy
+pyarrow
+scikit-learn
+matplotlib
+seaborn
+shap
+xgboost
+tensorflow
+torch
+fastai
+pytorch-tabnet
+lightning-flash
