@@ -41,7 +41,7 @@ data/        gitignored; put loans_clean.parquet in data/processed/
 
 1. `git clone https://github.com/kratipatel/loan-default-mlbd.git` and `cd loan-default-mlbd`
 2. `pip install -r requirements.txt` (Python version used: [fill in])
-3. Run `notebooks/01_data_cleaning.ipynb`. Set its output path to `data/processed/loans_clean.parquet`.
+3. Run `python -m src.prepare_data` from the repo root. It downloads the sample, cleans it, and writes `data/processed/loans_clean.parquet`.
 4. Run the notebooks in order.
 
 ## Shared code rules
