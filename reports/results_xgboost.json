@@ -5,7 +5,7 @@
     "learning_rate": 0.03,
     "min_child_weight": 1
   },
-  "train_seconds": 16.2,
+  "train_seconds": 16.6,
   "val": {
     "rmse": 0.36593110239403015,
     "mae": 0.2680924882555579,
