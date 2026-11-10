@@ -126,12 +126,14 @@ loan-default-mlbd/
 │   ├── raw/                  (gitignored)
 │   └── processed/            (gitignored; loans_clean.parquet is generated here)
 ├── notebooks/
+│   ├── 01_data_cleaning.ipynb
 │   ├── 02_eda.ipynb
 │   ├── 03_xgboost.ipynb
+│   ├── 04_keras.ipynb
+│   ├── 05_fastai.ipynb
 │   ├── 06_tabnet.ipynb
 │   ├── 07_flash.ipynb
-│   ├── 08_comparison.ipynb
-│   └── (Keras and fastai notebooks)
+│   └── 08_comparison.ipynb
 ├── reports/
 │   ├── figures/
 │   ├── leakage_audit.md
@@ -205,7 +207,7 @@ data, num_cols, cat_cols, cardinalities = make_nn_data(train, val, test)
 
 **6. Run the notebooks**
 
-Run the notebooks in `notebooks/` in order. The Flash implementation may need a compatible Python and PyTorch environment. The comparison notebook reads the saved `results_*.json` files and builds the tables and plots.
+Run the notebooks in order: `01_data_cleaning` (explains the cleaning; `src.prepare_data` is the runnable version), `02_eda`, then one notebook per framework (`03`-`07`). `08_comparison` reads the saved `results_*.json` files and builds the comparison tables. The Flash notebook may need a compatible Python and PyTorch environment.
 
 ### Shared rules for all frameworks
 
